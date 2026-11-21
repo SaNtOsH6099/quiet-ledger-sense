@@ -1,0 +1,140 @@
+{
+ "caption": "Debt funds lend your money to governments and companies for interest. Since April 2023 they are taxed at your slab rate, with no long-term benefit at all. Save this for later, and follow Rupee Sense for the next money basic.",
+ "hashtags": [
+  "#DebtFunds",
+  "#MoneyBasics",
+  "#RupeeSense"
+ ],
+ "number": 65,
+ "pages": [
+  {
+   "eyebrow": "MONEY BASICS",
+   "name": "cover",
+   "sub": "Steadier than equity.<br>Not risk-free.",
+   "title": "DEBT<br>FUNDS",
+   "type": "cover"
+  },
+  {
+   "body": "Your money is lent to governments and companies. You earn interest, not growth.",
+   "eyebrow": "THE IDEA",
+   "heading": "What is it?",
+   "inner": {
+    "kind": "rows",
+    "rows": [
+     [
+      "Who borrows",
+      "Govt and companies"
+     ],
+     [
+      "What you earn",
+      "Interest income"
+     ],
+     [
+      "Returns move",
+      "With interest rates"
+     ]
+    ],
+    "title": "The basics"
+   },
+   "name": "idea",
+   "type": "standard"
+  },
+  {
+   "body": "Debt funds bought on or after 1 April 2023 are taxed at your slab rate, however long you hold them. No long-term rate, no indexation.",
+   "eyebrow": "THE TAX SURPRISE",
+   "heading": "No long-term benefit left.",
+   "inner": {
+    "kind": "rows",
+    "rows": [
+     [
+      "In the 30% slab",
+      "Rs 31,200"
+     ],
+     [
+      "In the 20% slab",
+      "Rs 20,800"
+     ]
+    ],
+    "title": "Tax on a Rs 1,00,000 gain"
+   },
+   "name": "tax",
+   "note": "Includes 4% cess. The old indexation benefit is gone.",
+   "type": "standard"
+  },
+  {
+   "body": "Since 2023 both pay slab-rate tax. So the choice is about liquidity and risk, not tax.",
+   "eyebrow": "DEBT FUND VS FD",
+   "heading": "Same tax now.",
+   "inner": {
+    "kind": "rows",
+    "rows": [
+     [
+      "Fixed deposit",
+      "Keeps Rs 4,816"
+     ],
+     [
+      "Debt fund, 7%",
+      "Keeps Rs 4,816"
+     ],
+     [
+      "The difference",
+      "Liquidity and risk"
+     ]
+    ],
+    "title": "Rs 1,00,000 at 7%, 30% slab"
+   },
+   "name": "vsfd",
+   "note": "Example. Debt fund returns are not fixed.",
+   "type": "standard"
+  },
+  {
+   "body": "Check what the fund holds before you buy.",
+   "eyebrow": "TWO RISKS TO KNOW",
+   "groups": [
+    {
+     "items": "The borrower may not repay. Favour government and top-rated paper.",
+     "title": "CREDIT RISK"
+    },
+    {
+     "items": "When rates rise, old bonds lose value. Longer funds swing more.",
+     "title": "INTEREST RATE RISK"
+    }
+   ],
+   "heading": "Two risks to know.",
+   "name": "risks",
+   "type": "compare"
+  },
+  {
+   "body": "Three questions before any debt fund gets your money.",
+   "eyebrow": "BEFORE YOU BUY",
+   "heading": "Check these three.",
+   "items": [
+    [
+     1,
+     "Who does it lend to?",
+     "Government and AAA paper is the steadier end."
+    ],
+    [
+     2,
+     "How long is its duration?",
+     "Shorter duration means smaller swings."
+    ],
+    [
+     3,
+     "What is your tax slab?",
+     "At 30%, the FD may beat it after tax."
+    ]
+   ],
+   "name": "check",
+   "type": "list"
+  },
+  {
+   "big": "Steady is not<br>safe. Check first.",
+   "name": "close",
+   "sub": "Follow Rupee Sense for the next money basic.",
+   "type": "closing"
+  }
+ ],
+ "slug": "debt-funds",
+ "topic": "Debt mutual funds"
+}
