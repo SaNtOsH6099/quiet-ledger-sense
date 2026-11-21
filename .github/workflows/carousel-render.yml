@@ -1,0 +1,54 @@
+name: Carousel render
+
+# Render Rupee Sense carousel pages (HTML -> 1080x1080 PNG) on a healthy
+# runner and replace the files on Drive in place. Used when the local VM
+# cannot render (see carousel/rebuild-8.json for the post -> Drive map).
+# Trigger by hand: Actions -> Carousel render -> Run workflow.
+
+on:
+  workflow_dispatch:
+    inputs:
+      posts:
+        description: 'Post numbers: "65" (one), "all", or comma list "65,79,80"'
+        required: true
+        default: "65"
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    env:
+      DRIVE_OAUTH_JSON: ${{ secrets.DRIVE_OAUTH_JSON }}
+      DRIVE_SERVICE_ACCOUNT_JSON: ${{ secrets.DRIVE_SERVICE_ACCOUNT_JSON }}
+      DRIVE_FOLDER_ID: ${{ secrets.DRIVE_FOLDER_ID }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Install Chrome
+        id: chrome
+        uses: browser-actions/setup-chrome@v1
+      - name: Install Python deps
+        run: python3 -m pip install -q -r requirements/drive.txt
+      - name: Install Node deps
+        run: npm install --prefix carousel/render
+      - name: Download Montserrat font
+        run: |
+          mkdir -p carousel/fonts
+          curl -sL -o carousel/fonts/Montserrat-VF.ttf "https://github.com/google/fonts/raw/main/ofl/montserrat/Montserrat%5Bwght%5D.ttf"
+          test "$(stat -c%s carousel/fonts/Montserrat-VF.ttf)" -eq 744936
+      - name: Render + replace on Drive
+        env:
+          CHROME_PATH: ${{ steps.chrome.outputs.chrome-path }}
+          NODE_PATH: ${{ github.workspace }}/carousel/render/node_modules
+          CAROUSEL_FONT_URL: file://${{ github.workspace }}/carousel/fonts/Montserrat-VF.ttf
+        run: python3 carousel/render/run_batch.py "${{ inputs.posts }}"
+      - name: Upload renders as artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: carousel-renders
+          path: carousel/work/
+          if-no-files-found: error
