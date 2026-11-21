@@ -1,0 +1,1 @@
+{"dependencies":{"puppeteer-core":"25.15.0"},"description":"Screenshot step for Rupee Sense carousel builds (puppeteer-core, same version as the local VM).","name":"carousel-render","private":true,"version":"1.0.0"}
