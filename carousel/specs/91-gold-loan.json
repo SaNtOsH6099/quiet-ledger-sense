@@ -1,0 +1,132 @@
+{
+ "caption": "A gold loan is the fastest money in India, but the lender you pick can double or triple the cost, and missed payments can end in your gold being auctioned. Compare a bank first. Save this for later, and follow Rupee Sense for the next money basic.",
+ "hashtags": [
+  "#GoldLoan",
+  "#MoneyBasics",
+  "#RupeeSense"
+ ],
+ "number": 91,
+ "pages": [
+  {
+   "eyebrow": "MONEY BASICS",
+   "name": "cover",
+   "sub": "Quick money against<br>your gold, and the risks.",
+   "title": "GOLD<br>LOANS",
+   "type": "cover"
+  },
+  {
+   "body": "The lender never lends the full value of your gold. The gap is their safety margin.",
+   "eyebrow": "HOW MUCH YOU GET",
+   "heading": "The loan you get.",
+   "inner": {
+    "kind": "rows",
+    "rows": [
+     [
+      "Gold worth Rs 2 lakh",
+      "Rs 1,70,000"
+     ],
+     [
+      "Gold worth Rs 10 lakh",
+      "Rs 7,50,000"
+     ]
+    ],
+    "title": "Maximum loan, RBI limits"
+   },
+   "name": "ltv",
+   "note": "85% on loans up to Rs 2.5 lakh, 80% to Rs 5 lakh, 75% above.",
+   "type": "standard"
+  },
+  {
+   "body": "The same gold, the same year. The lender you pick doubles or triples the cost.",
+   "eyebrow": "THE RATE GAP",
+   "heading": "The rate gap.",
+   "inner": {
+    "kind": "rows",
+    "rows": [
+     [
+      "Bank, at 9%",
+      "Rs 18,000 interest"
+     ],
+     [
+      "NBFC, at 18%",
+      "Rs 36,000 interest"
+     ],
+     [
+      "NBFC, at 24%",
+      "Rs 48,000 interest"
+     ]
+    ],
+    "title": "Rs 2 lakh for one year"
+   },
+   "name": "rates",
+   "note": "Public-sector bank gold loans run about 8.5-10.5%. NBFCs can reach 24% or more.",
+   "type": "standard"
+  },
+  {
+   "body": "Speed and price pull in opposite directions.",
+   "eyebrow": "BANK OR NBFC",
+   "groups": [
+    {
+     "items": "Cheaper, about 8.5-10.5% at public-sector banks. Slower, more paperwork.",
+     "title": "BANK"
+    },
+    {
+     "items": "Faster, often 30 minutes. Pricier, up to 24% or more on standard loans.",
+     "title": "NBFC"
+    }
+   ],
+   "heading": "Bank or NBFC?",
+   "name": "lender",
+   "type": "compare"
+  },
+  {
+   "body": "How a quick loan turns costly.",
+   "eyebrow": "THE TRAPS",
+   "heading": "The traps.",
+   "items": [
+    [
+     1,
+     "The bullet trap.",
+     "Nothing monthly, then all at once. Miss it, and your gold is auctioned."
+    ],
+    [
+     2,
+     "The low-rate trap.",
+     "Teaser rates apply only if you borrow 50-60% of your gold's value. Standard loans cost far more."
+    ],
+    [
+     3,
+     "The renewal trap.",
+     "Rolling it over keeps the interest running."
+    ]
+   ],
+   "name": "traps",
+   "type": "list"
+  },
+  {
+   "body": "A gold loan is fast money. Fast money needs a faster exit plan.",
+   "eyebrow": "BEFORE YOU PLEDGE",
+   "heading": "Before you pledge.",
+   "inner": {
+    "items": [
+     "Compare a bank first",
+     "Read the auction clause",
+     "Know the total interest",
+     "Have a repayment date"
+    ],
+    "kind": "checklist",
+    "title": "Check these four first"
+   },
+   "name": "pledge",
+   "type": "standard"
+  },
+  {
+   "big": "Borrow on gold.<br>Never lose it.",
+   "name": "close",
+   "sub": "Follow Rupee Sense for the next money basic.",
+   "type": "closing"
+  }
+ ],
+ "slug": "gold-loan",
+ "topic": "Gold loans"
+}
