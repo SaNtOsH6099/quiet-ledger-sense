@@ -1,0 +1,54 @@
+{
+ "generated": "2026-11-22 07:38",
+ "claims": [
+  {
+   "id": "test-ssy",
+   "claim": "Sukanya Samriddhi Yojana pays 8.2% interest a year",
+   "status": "NOT_FOUND",
+   "snippets": [],
+   "errors": [
+    "search 'Sukanya Samriddhi Yojana interest rate 8': HTTP 202",
+    "search 'SSY interest rate current 2026': HTTP 202"
+   ],
+   "urls_tried": []
+  },
+  {
+   "id": "test-gst",
+   "claim": "GST on an under-construction flat is 5% of the full price (7.5% on two-thirds after the land deduction)",
+   "status": "NOT_FOUND",
+   "snippets": [],
+   "errors": [
+    "search 'GST under construction flat 5% effective': HTTP 202",
+    "search 'Notification 03/2019 GST 7.5% two-thirds': HTTP 202"
+   ],
+   "urls_tried": []
+  },
+  {
+   "id": "test-epf",
+   "claim": "EPF wage ceiling is Rs 25,000 a month since September 2026",
+   "status": "NOT_FOUND",
+   "snippets": [],
+   "errors": [
+    "search 'EPFO wage ceiling Rs 25000 September 202': HTTP 202",
+    "search 'EPF wage limit 25000 Gazette': HTTP 202"
+   ],
+   "urls_tried": []
+  },
+  {
+   "id": "test-ppf",
+   "claim": "PPF pays 7.1% interest a year",
+   "status": "NOT_FOUND",
+   "snippets": [],
+   "errors": [
+    "search 'PPF interest rate 7.1% 2026': HTTP 202",
+    "search 'Public Provident Fund interest rate curr': HTTP 202"
+   ],
+   "urls_tried": []
+  }
+ ],
+ "summary": {
+  "total": 4,
+  "found": 0,
+  "not_found": 4
+ }
+}
