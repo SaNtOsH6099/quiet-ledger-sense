@@ -1,0 +1,49 @@
+name: scraper
+
+# Runs the Rupee Sense evidence scraper on GitHub's runners (free for
+# public repos). Trigger by hand with a prompts file; the evidence
+# files are committed back to scraper/evidence/ and uploaded as an
+# artifact. No secrets needed for the direct-URL path.
+on:
+  workflow_dispatch:
+    inputs:
+      prompts:
+        description: "Prompts file under scraper/prompts (e.g. test-search.json)"
+        required: true
+        default: "test-search.json"
+      out:
+        description: "Evidence output name (no extension)"
+        required: true
+        default: "evidence"
+
+permissions:
+  contents: write
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install dependencies
+        run: pip install -r scraper/requirements.txt
+      - name: Run scraper
+        run: |
+          mkdir -p scraper/evidence
+          python scraper/scrape_evidence.py "scraper/prompts/${{ inputs.prompts }}" "scraper/evidence/${{ inputs.out }}"
+      - name: Upload evidence artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ inputs.out }}
+          path: scraper/evidence/${{ inputs.out }}.*
+          if-no-files-found: error
+      - name: Commit evidence
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add scraper/evidence/
+          git diff --cached --quiet || git commit -m "evidence: ${{ inputs.out }} from ${{ inputs.prompts }}"
+          git push
